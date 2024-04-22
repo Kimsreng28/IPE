@@ -13,7 +13,6 @@ import java.awt.event.ActionListener;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextPane;
@@ -82,7 +81,9 @@ public class Interface extends JFrame {
         signUpButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "Sign Up button clicked");
+                updateAsciiArt(
+                        "<html><div style='font-size:50px;text-align:center;color:purple;'>Complete Your Form Below</div></html>");
+                buttonPanel.setVisible(false);
             }
         });
 
