@@ -1,4 +1,5 @@
 package service;
+
 // ======================================== Core Library
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -17,6 +18,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextPane;
 import javax.swing.border.Border;
+
 public class Interface extends JFrame {
 
     private JTextPane asciiTextPane;
@@ -87,7 +89,8 @@ public class Interface extends JFrame {
         loginButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                updateAsciiArt("<html><div style='font-size:100px;text-align:center;color:green;'>Spring Success</div></html>");
+                updateAsciiArt(
+                        "<html><div style='font-size:100px;text-align:center;color:green;'>Your Sing in is Success</div></html>");
                 buttonPanel.setVisible(false);
             }
         });
