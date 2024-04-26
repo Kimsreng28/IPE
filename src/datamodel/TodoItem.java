@@ -10,7 +10,7 @@ public class TodoItem {
     public TodoItem(String shortDescription, String details, LocalDate deadline) {
         this.shortDescription = shortDescription;
         this.details = details;
-        this.deadline =  deadline;
+        this.deadline = deadline;
     }
 
     public String getShortDescription() {
