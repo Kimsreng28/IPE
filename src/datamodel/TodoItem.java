@@ -2,6 +2,7 @@ package datamodel;
 
 import java.time.LocalDate;
 
+// TodoItem
 public class TodoItem {
     private String shortDescription;
     private String details;
